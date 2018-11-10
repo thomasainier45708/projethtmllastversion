@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "mapolice";
+  src: url(mapolice.ttf) format("truetype");
+}
+
+
+
+.header {
+    border-top: solid black 1px;
+		background-image:url(fondheader.jpg);
+    margin-left: none;
+		height: 120px;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+
+}
+
+
+h1{
+		color: white;
+
+		font-size: 40px;
+	  text-align:center;
+    margin-left: 4px;
+    display:inline-block;
+    position:relative;
+    width:100%;
+}
+.menu {
+
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+
+  padding:7px;
+  margin-top:0px;
+  display:block;
+  width:100%;
+  color:black;
+  text-decoration: none;
+
+
+}
+.brd {
+
+	border-top: solid black 1px;
+
+}
+
+
+
+.menu a {
+    display: block;
+    font-size: 32px;
+    padding: 2px 16px;
+    text-decoration: none;
+
+}
+
+.menu a.active {
+    background-image: linear-gradient(-90deg, black, black);
+    color: white;
+}
+
+.menu a:hover:not(.active) {
+	  transition: all 1s;
+    background-image: linear-gradient(-90deg, #000, #000);
+    color: white;
+}
+.main {
+  position: relative;
+  
+  margin: 0 auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+	font-size: 34.5px;
+  float:left;
+  width:60%;
+  padding: none;
+  color: black;
+	border-left: solid black 1px;
+	border-right: solid black 1px;
+
+	border-top: solid black 1px;
+}
+
+.main img {
+
+  vertical-align: middle;
+  opacity: 1;
+}
+
+
+
+
+
+.pavot {
+	border-radius: 50%;
+	width: 35%;
+	border-style: dotted;
+	border-color: black;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.right {
+	font-size: 31px;
+  float:left;
+  width:20%;
+  margin-top:0px;
+  text-align:center;
+	border-top: solid black 1px;
+
+
+
+}
+
+.right a {
+    text-align: center;
+    display: block;
+    font-size: 32px;
+    padding: 2px 16px;
+    text-decoration: none;
+    padding:7px;
+    margin-top:0px;
+
+    border-bottom: solid black 1px;
+    width:100%;
+    color:black;
+    text-decoration: none;
+}
+
+.right a.active {
+    background-image: linear-gradient(-90deg, black, black);
+    color: white;
+    text-align: center;
+
+}
+
+.right a.compare {
+  background-image: linear-gradient(-90deg, black, black);
+  color: white;
+  text-align: center;
+
+}
+
+.right a:hover:not(.active) {
+	  transition: all 1s;
+    background-image: linear-gradient(-90deg, #000, #000);
+    color: white;
+    text-align: center;
+
+}
+
+.footer {
+	background-color: #000;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-top: none;
+	font-size: 32px;
+}
+
+@media only screen and (max-width:620px) {
+
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:mapolice;">
+
+<div class="header">
+  <h1 class="titre"><span style="background:#000;opacity:0.5;font-size:50px;">&nbsp;BR&nbsp;</span>&nbsp;COMPARATOR</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="brd"><a href="#">Nous contacter</a></div>
+    <a href="monsite.html">Qui sommes nous ?</a>
+    <a href="#">Notre actualite</a>
+    <a href="#">Recrutement</a>
+    <a class="active" href="page3.html">Notre comparateur</a>
+    <a href="page2.html">Nos partenaires</a>
+  </div>
+
+  <div class="main">
+    <img class="sliderun" src="sliderun.jpg" alt="su" width=100%;>
+    <div class="content">
+
+
+    </div>
+
+
+  </div>
+
+  <div class="right">
+    <h2 class="droite">Le Comparateur</h2>
+    <div style="overflow:auto">
+      <div class="menu">
+        </div>
+        <a class="active" href="#">Kronenbourg</a>
+        <a href="#">Carlsberg</a>
+        <a class="compare" href="#">Heineken</a>
+        <a href="#">Maximator</a>
+        <a href="#">Paix Dieu</a>
+      </div>
+
+  </div>
+</div>
+
+<div class="footer">Beer Comparator 2018 &copy;</div>
+
+</body>
+</html>
